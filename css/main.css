@@ -13,29 +13,9 @@ body {
   background-color: orange;
   padding: 32px 48px;
 }
-h1 {
-  text-align: center;
-  margin-bottom: 16px;
-}
-.search input {
-  position: absolute;
-  top: 32px;
-  right: 48px;
-  border-radius: 4px;
-  padding: 4px;
-  outline: none;
-  padding-left: 32px;
-}
-.search::before {
-  content: "🔍";
-  position: absolute;
-  z-index: 999;
-  top: 36px;
-  right: 240px;
-}
-nav {
+/* navigator */
+.navigator {
   display: flex;
-  /* margin-bottom: 24px; */
   justify-content: space-between;
   align-items: center;
   position: sticky;
@@ -43,44 +23,34 @@ nav {
   z-index: 999;
   height: 92px;
   background-color: orange;
-  /* border-bottom: 4px solid orangered; */
 }
-nav .box-logo {
+.navigator .bx-logo {
   border-radius: 50%;
   overflow: hidden;
   height: 80px;
   width: 80px;
 }
-nav .box-logo img {
+.navigator .bx-logo img {
   width: 100%;
   object-fit: cover;
 }
-nav .links {
-  margin-left: 48px;
+.navigator .links {
+  display: flex;
+  align-items: center;
+}
+.navigator .links a {
+  text-decoration: none;
+  color: white;
+  padding: 16px 24px;
+  position: relative;
   text-align: center;
   font-weight: bold;
+  text-transform: capitalize;
 }
-.links {
-  display: flex;
-  /* justify-content: stretch; */
-  align-items: center;
-  border-radius: 4px;
-  overflow: hidden;
-  /* position: sticky;
-  top: 0; */
-}
-.links a {
-  text-decoration: none;
-  color: black;
-  padding: 24px 48px;
-  position: relative;
-  /* background-color: white; */
-  /* border: 1px solid black; */
-}
-.links a:hover {
+.navigator .links a:hover {
   background-color: orangered;
 }
-.links a:first-child::after {
+.navigator .links a:first-child::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -88,23 +58,46 @@ nav .links {
   bottom: 0;
   left: 0;
   background-color: orangered;
-  /* border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px; */
-  /* border-right: none; */
 }
-.links a:last-child {
+/* .links a:last-child {
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
   border-left: none;
+} */
+
+.search input {
+  /* position: absolute;
+  top: 32px;
+  right: 48px;
+  border-radius: 4px;
+  padding: 4px;
+  outline: none;
+  padding-left: 32px; */
 }
+/* .search::before {
+  content: "🔍";
+  position: absolute;
+  z-index: 999;
+  top: 36px;
+  right: 240px;
+} */
+
+/* home */
 .home {
   display: flex;
   justify-content: space-between;
   gap: 24px;
 }
+.home .data {
+  background-color: white;
+  width: 100%;
+  border-radius: 4px;
+  overflow: hidden;
+  /* padding: 0 0 4px; */
+}
 .box-img {
   position: relative;
-  height: 240px;
+  height: 320px;
 }
 .box-img img {
   height: 100%;
@@ -122,13 +115,61 @@ nav .links {
   padding: 4px;
   border-radius: 4px;
 }
-main div p {
-  margin-top: 16px;
-  background-color: white;
-  padding: 4px;
-  border-radius: 4px;
-  border: 1px solid black;
+.data p {
+  padding: 8px 4px;
 }
+#letter {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+/* letter */
+#search {
+  /* margin: 0 auto; */
+  border: none;
+  padding: 8px 16px;
+  border-bottom: 2px solid orangered;
+  background: transparent;
+  width: 40%;
+  outline: none;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 24px;
+}
+#search::placeholder {
+  color: #cccc;
+  font-size: 20px;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 280px);
+  grid-auto-rows: 264px;
+  gap: 20px;
+}
+.card {
+  border-radius: 4px;
+  overflow: hidden;
+  cursor: pointer;
+  background-color: white;
+}
+.card p {
+  padding: 4px;
+}
+.card p:last-child {
+  text-align: right;
+  font-weight: bold;
+  color: green;
+}
+/* .bimg {
+  height: 200px;
+} */
+.card img {
+  width: 280px;
+  height: 200px;
+  object-fit: cover;
+}
+/* translate */
 .language {
   margin-top: 24px;
   display: flex;
@@ -145,6 +186,7 @@ main div p {
   padding: 4px 8px;
   cursor: pointer;
 }
+#home,
 #letter,
 #promotions,
 #orders,
@@ -152,4 +194,9 @@ main div p {
 #contact {
   min-height: 100vh;
   padding-top: 92px;
+}
+.title {
+  text-align: center;
+  font-weight: bold;
+  padding: 16px;
 }

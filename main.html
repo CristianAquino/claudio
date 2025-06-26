@@ -7,11 +7,8 @@
     <title>Document</title>
   </head>
   <body>
-    <!-- <div class="search">
-      <input type="text" placeholder="Search" />
-    </div> -->
-    <nav>
-      <div class="box-logo">
+    <nav class="navigator">
+      <div class="bx-logo">
         <img
           src="https://i.pinimg.com/280x280_RS/50/76/f9/5076f9b9cb08a30b7281558c5c74bf91.jpg"
           alt="logo"
@@ -20,68 +17,67 @@
       <div class="links">
         <a data-text="home" href="#home"></a>
         <a data-text="letter" href="#letter"></a>
-        <!-- <a data-text="promotions" href="#promotions"></a> -->
         <a data-text="orders" href="#orders"></a>
         <a data-text="our_essence" href="#our_essence"></a>
-        <!-- <a data-text="contact" href="#contact"></a> -->
       </div>
     </nav>
-    <h1 id="home" data-text="title"></h1>
     <main>
-      <div class="home">
-        <div>
-          <div class="box-img">
-            <span
-              >Siente el placer de disfrutar un cafe en completa armonia</span
-            >
-            <img
-              src="https://images.pexels.com/photos/27053550/pexels-photo-27053550.jpeg"
-              alt="cofee1"
-            />
+      <div id="home">
+        <h1 data-text="title" class="title"></h1>
+        <div class="home">
+          <div class="data">
+            <div class="box-img">
+              <span
+                >Siente el placer de disfrutar un cafe en completa armonia</span
+              >
+              <img
+                src="https://images.pexels.com/photos/27053550/pexels-photo-27053550.jpeg"
+                alt="cofee1"
+              />
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+              quibusdam nostrum dignissimos nesciunt accusamus sed corporis
+              aliquid nam aspernatur qui laboriosam molestias, consequatur
+              architecto exercitationem tempora vero, iste tenetur esse. Minus
+              odio asperiores quae autem cumque cum itaque similique ex alias
+              saepe, eos tenetur numquam quas ratione veritatis et modi.
+            </p>
           </div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-            quibusdam nostrum dignissimos nesciunt accusamus sed corporis
-            aliquid nam aspernatur qui laboriosam molestias, consequatur
-            architecto exercitationem tempora vero, iste tenetur esse. Minus
-            odio asperiores quae autem cumque cum itaque similique ex alias
-            saepe, eos tenetur numquam quas ratione veritatis et modi.
-          </p>
-        </div>
-        <div>
-          <div class="box-img">
-            <span>Disfruta de nuestras grandes variedades</span>
-            <img
-              src="https://images.pexels.com/photos/32640579/pexels-photo-32640579.jpeg"
-              alt="cofee2"
-            />
+          <div class="data">
+            <div class="box-img">
+              <span>Disfruta de nuestras grandes variedades</span>
+              <img
+                src="https://images.pexels.com/photos/32640579/pexels-photo-32640579.jpeg"
+                alt="cofee2"
+              />
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+              quibusdam nostrum dignissimos nesciunt accusamus sed corporis
+              aliquid nam aspernatur qui laboriosam molestias, consequatur
+              architecto exercitationem tempora vero, iste tenetur esse. Minus
+              odio asperiores quae autem cumque cum itaque similique ex alias
+              saepe, eos tenetur numquam quas ratione veritatis et modi.
+            </p>
           </div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-            quibusdam nostrum dignissimos nesciunt accusamus sed corporis
-            aliquid nam aspernatur qui laboriosam molestias, consequatur
-            architecto exercitationem tempora vero, iste tenetur esse. Minus
-            odio asperiores quae autem cumque cum itaque similique ex alias
-            saepe, eos tenetur numquam quas ratione veritatis et modi.
-          </p>
         </div>
       </div>
-
       <div id="letter">
-        <h2 data-text="letter"></h2>
+        <h1 data-text="letter" class="title"></h1>
+        <input
+          type="text"
+          placeholder="Busca tus cafes preferidos"
+          id="search"
+        />
+        <section id="container" class="container"></section>
       </div>
-      <!-- <div id="promotions">
-        <h2 data-text="promotions"></h2>
-      </div> -->
       <div id="orders">
-        <h2 data-text="orders"></h2>
+        <h1 data-text="orders" class="title"></h1>
       </div>
       <div id="our_essence">
-        <h2 data-text="our_essence"></h2>
+        <h1 data-text="our_essence" class="title"></h1>
       </div>
-      <!-- <div id="contact">
-        <h2 data-text="contact"></h2>
-      </div> -->
       <div class="language">
         <select name="idioma" id="translate">
           <option value="spanish" selected>español</option>
