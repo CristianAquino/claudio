@@ -39,20 +39,25 @@ body {
   display: flex;
   align-items: center;
 }
-.navigator .links a {
-  text-decoration: none;
+.navigator .links li {
+  list-style: none;
   color: white;
-  padding: 16px 24px;
+  padding: 16px 20px;
   position: relative;
   text-align: center;
   font-weight: bold;
   text-transform: capitalize;
 }
-.navigator .links a:hover {
+.navigator .links a {
+  text-decoration: none;
+  color: white;
+  padding: 16px 20px;
+}
+.navigator .links li:hover {
   background-color: orangered;
   border-radius: 4px;
 }
-.navigator .links a:first-child::after {
+.navigator .links .active::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -123,7 +128,7 @@ body {
 .container {
   display: grid;
   grid-template-columns: repeat(4, 280px);
-  grid-auto-rows: 264px;
+  grid-auto-rows: auto;
   gap: 20px;
 }
 .card {
@@ -148,16 +153,23 @@ body {
 
 /* translate */
 .language {
-  margin-top: 24px;
-  display: flex;
-  gap: 8px;
-  justify-content: center;
-}
-.language * {
+  padding: 4px;
+  border: 1px solid orangered;
   border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  background-color: white;
 }
 .language select {
-  width: 148px;
+  width: 80px;
+  appearance: none;
+  background-color: white;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: capitalize;
 }
 .language button {
   padding: 4px 8px;

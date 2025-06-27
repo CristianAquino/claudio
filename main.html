@@ -4,22 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <title>Document</title>
   </head>
   <body>
     <nav class="navigator">
       <div class="bx-logo">
-        <img
-          src="https://i.pinimg.com/280x280_RS/50/76/f9/5076f9b9cb08a30b7281558c5c74bf91.jpg"
-          alt="logo"
-        />
+        <img src="./img/logo.jpg" alt="logo" />
       </div>
-      <div class="links">
-        <a data-text="home" href="#home"></a>
-        <a data-text="menu" href="#menu"></a>
-        <a data-text="orders" href="#orders"></a>
-        <a data-text="our_essence" href="#our_essence"></a>
-      </div>
+      <ul class="links">
+        <li class="active">
+          <a data-text="home" href="#home"></a>
+        </li>
+        <li>
+          <a data-text="menu" href="#menu"></a>
+        </li>
+        <li>
+          <a data-text="orders" href="#orders"></a>
+        </li>
+        <li>
+          <a data-text="our_essence" href="#our_essence"></a>
+        </li>
+        <div class="language">
+          <select name="idioma" id="translate">
+            <option value="spanish" data-text="language1" selected></option>
+            <option value="english" data-text="language2"></option>
+          </select>
+          <i class="fas fa-language fa-2x"></i>
+        </div>
+      </ul>
     </nav>
     <main>
       <div id="home">
@@ -28,20 +48,14 @@
           <div class="data">
             <div class="box-img">
               <span data-text="slog1"></span>
-              <img
-                src="https://images.pexels.com/photos/27053550/pexels-photo-27053550.jpeg"
-                alt="cofee1"
-              />
+              <img src="./img/cofee1.jpeg" alt="cofee1" />
             </div>
             <p data-text="phrase1"></p>
           </div>
           <div class="data">
             <div class="box-img">
               <span data-text="slog2"></span>
-              <img
-                src="https://images.pexels.com/photos/32640579/pexels-photo-32640579.jpeg"
-                alt="cofee2"
-              />
+              <img src="./img/cofee2.jpeg" alt="cofee2" />
             </div>
             <p data-text="phrase2"></p>
           </div>
@@ -49,11 +63,7 @@
       </div>
       <div id="menu">
         <h1 data-text="menu" class="title"></h1>
-        <input
-          type="text"
-          placeholder="Busca tus cafes preferidos"
-          id="search"
-        />
+        <input type="text" data-text="placeholder" id="search" />
         <section id="container" class="container"></section>
       </div>
       <div id="orders">
@@ -62,7 +72,7 @@
           <img src="./img/delivery.png" alt="delivery" />
           <section>
             <p>
-              <i>"Tu café favorito, a solo un mensaje de distancia."</i>
+              <i data-text="orderTxt"></i>
             </p>
             <div class="socials">
               <a
@@ -78,25 +88,11 @@
         <h1 data-text="our_essence" class="title"></h1>
         <div class="we">
           <img src="./img/our_essence.jpeg" alt="our_essence" />
-          <p><i>"Pasión por el café, dedicación en cada detalle."</i></p>
+          <p><i data-text="ne1"></i></p>
           <p>
-            <i>
-              "Somos amantes del café y de las buenas conversaciones. Nacimos
-              del deseo de crear un espacio donde el aroma del café se combine
-              con la calidez del ambiente. Seleccionamos granos de calidad,
-              tostados con esmero y servidos con pasión. Más que una cafetería,
-              somos un lugar para compartir, relajarte y sentirte como en
-              casa."</i
-            >
+            <i data-text="ne2"> </i>
           </p>
         </div>
-      </div>
-      <div class="language">
-        <select name="idioma" id="translate">
-          <option value="spanish" selected>español</option>
-          <option value="english">ingles</option>
-        </select>
-        <button>Seleccionar idioma</button>
       </div>
     </main>
     <script src="./js/main.js"></script>
