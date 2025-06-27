@@ -2,20 +2,28 @@ const traducciones = {
   spanish: {
     title: "Esencia de cafe",
     home: "Home",
-    letter: "Carta",
-    promotions: "Promociones",
+    menu: "Carta de cafés",
     orders: "Pedidos",
-    our_essence: "Nuestra essencia",
-    contact: "Contacto",
+    our_essence: "Nuestra esencia",
+    slog1: "Cada taza, un momento que vale la pena.",
+    slog2: "Más que café, es tu refugio diario.",
+    phrase1:
+      "En nuestra cafetería, cada taza cuenta una historia. No solo servimos café, creamos momentos especiales que invitan a desconectarte del ruido y reconectar contigo mismo. El aroma, el sabor y la calidez de nuestro espacio están pensados para hacerte sentir en casa desde el primer sorbo hasta la última sonrisa.",
+    phrase2:
+      "Más que una cafetería, somos un punto de encuentro para los amantes del buen café. Seleccionamos granos de calidad, cuidamos cada detalle en la preparación y te ofrecemos un ambiente único para disfrutar, trabajar o compartir. Porque sabemos que un buen día comienza con una excelente taza de café.",
   },
   english: {
     title: "Essence of coffee",
     home: "Home",
-    letter: "Letter",
-    promotions: "Promotions",
+    menu: "coffee menu",
     orders: "Orders",
     our_essence: "Our essence",
-    contact: "Contact",
+    slog1: "Every cup, a moment worthwhile.",
+    slog2: "More than coffee, it's your daily refuge.",
+    phrase1:
+      "At our coffee shop, every cup tells a story. We don’t just serve coffee — we create special moments that invite you to disconnect from the noise and reconnect with yourself. The aroma, the flavor, and the warmth of our space are all designed to make you feel at home from the first sip to the last smile.",
+    phrase2:
+      "More than just a coffee shop, we are a meeting point for coffee lovers. We carefully select high-quality beans, pay attention to every detail in the preparation, and offer you a unique atmosphere to enjoy, work, or share. Because we believe a great day starts with an exceptional cup of coffee.",
   },
 };
 
